@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>MSPBots AI Conversational Ticket Intake | Emily Fan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="watermark" aria-hidden="true">Emily Fan - PM Case Study</div>
+  <header class="topbar">
+    <div class="brand-lockup">
+      <span class="brand">MSP<span>BOTS</span></span>
+      <span class="module-pill">AI Intake Case Study</span>
+    </div>
+    <nav class="topnav" aria-label="Case study modules">
+      <a href="#prd">PRD</a>
+      <a href="#prototype">Prototype</a>
+      <a href="#metrics">Metrics</a>
+      <a href="#gtm">GTM</a>
+      <a href="#revenue">Revenue</a>
+      <a href="#decisions">Decisions</a>
+      <a href="full-prd.html">Full PRD</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="gate" class="gate-screen">
+      <div class="hero-panel">
+        <div class="eyebrow">Executive evaluation package</div>
+        <h1>MSPBots AI Conversational Ticket Intake</h1>
+        <p class="subtitle">Pre-Triage Automation for MSP Service Desks</p>
+        <div class="meta-grid">
+          <div><strong>Product Leader</strong><span>Emily Fan</span></div>
+          <div><strong>Architecture</strong><span>Client Portal embedded and Admin Queue integrated</span></div>
+          <div><strong>Current Date</strong><span>June 17, 2026</span></div>
+        </div>
+        <a class="primary-cta" href="https://mspbots-demo-emilyfan.lovable.app/" target="_blank" rel="noopener">Launch Clickable Functional Prototype</a>
+      </div>
+      <aside class="access-card">
+        <h2>Access Registration Gate</h2>
+        <p>Register locally to open the case-study hub. This form does not transmit data.</p>
+        <form id="accessForm">
+          <label for="reviewerName">Reviewer name</label>
+          <input id="reviewerName" name="reviewerName" type="text" autocomplete="name" required>
+          <label for="reviewerEmail">Reviewer email</label>
+          <input id="reviewerEmail" name="reviewerEmail" type="email" autocomplete="email" required>
+          <button type="submit">Enter Case Study Hub</button>
+        </form>
+        <div class="legal-box">
+          <strong>Legal Disclaimer</strong>
+          This submission represents original analysis and prototype work prepared by Emily Fan for evaluation purposes only. Not intended for redistribution, resale, or reuse without permission.
+        </div>
+      </aside>
+    </section>
+
+    <section id="contentHub" class="content-hub locked" aria-live="polite">
+      <section class="executive-summary protected">
+        <div>
+          <div class="eyebrow">One-page executive summary</div>
+          <h2>Platform Bets</h2>
+          <p>The case frames AI Conversational Ticket Intake as a native MSPBots pre-triage automation layer that turns thin, unstructured requests into clean, routing-ready PSA metadata.</p>
+        </div>
+        <div class="bet-grid">
+          <article><span>01</span><strong>Context Enrichment over Resolution</strong><p>Prioritize upstream ticket quality instead of risky autonomous fixes.</p></article>
+          <article><span>02</span><strong>Pre-Triage Automation over Chatbots</strong><p>Position the product as operational throughput, not a generic AI wrapper.</p></article>
+          <article><span>03</span><strong>Ecosystem Inhabitation over Standalone SaaS</strong><p>Embed into Client Portal, PSA schemas, Next Ticket routing, KPI dashboards, and bots.</p></article>
+          <article><span>04</span><strong>Credit-Driven Plan Expansion</strong><p>Use AI credit consumption and plan-tier triggers to connect usage to ARR expansion.</p></article>
+        </div>
+      </section>
+
+      <section class="deliverable-launchpad protected" id="deliverables">
+        <div>
+          <div class="eyebrow">Required deliverables</div>
+          <h2>Submission Menu</h2>
+          <p>Each required project deliverable is available as a first-class click target. The full PRD also has its own standalone HTML file containing the original PRD content.</p>
+        </div>
+        <div class="deliverable-buttons">
+          <a href="#prd"><strong>PRD</strong><span>Integrated summary + complete source PRD link</span></a>
+          <a href="#prototype"><strong>Prototype</strong><span>Live link, flow evidence, edge cases</span></a>
+          <a href="#gtm"><strong>GTM Plan</strong><span>Positioning, segment logic, rollout process</span></a>
+          <a href="#revenue"><strong>Revenue Projection</strong><span>Assumptions, cases, growth loop</span></a>
+          <a href="#decisions"><strong>Decision Log</strong><span>Choices, tradeoffs, validation approach</span></a>
+          <a href="full-prd.html"><strong>Full PRD File</strong><span>Standalone original PRD HTML</span></a>
+        </div>
+      </section>
+
+      <section id="prd" class="module protected">
+        <div class="section-heading">
+          <span>Module 2</span>
+          <h2>Integrated Product Requirements</h2>
+          <p>Compiled from customer segmentation, strategy, scenario, flow, and PRD sources. This section shows the product reasoning path, not only the final requirements.</p>
+          <a class="secondary-link" href="full-prd.html">Open complete original PRD as standalone HTML</a>
+        </div>
+
+        <div class="reasoning-grid">
+          <article>
+            <h3>Why this problem first</h3>
+            <p>The case does not chase AI novelty. It starts from the service desk bottleneck where MSP margin is lost: incomplete intake creates dispatcher cleanup, technician diagnostic waste, SLA pressure, and broken automation. The product thesis is that every downstream MSPBots workflow becomes more valuable when upstream ticket data is clean.</p>
+          </article>
+          <article>
+            <h3>Why pre-triage, not auto-resolution</h3>
+            <p>Autonomous fixes are riskier, harder to trust, and harder to scope for V1. Pre-triage automation is a narrower and more defensible wedge: AI enriches metadata, explains its reasoning, flags uncertainty, and leaves Sarah as the final approval gate before PSA writeback.</p>
+          </article>
+          <article>
+            <h3>How scope was selected</h3>
+            <p>The source scenario matrix ranked categories by ticket frequency, information ambiguity, routing complexity, and automation potential. V1 prioritizes scenarios where clarification materially improves routing quality, while high-risk remediation and enterprise customization are deferred.</p>
+          </article>
+        </div>
+
+        <div class="split-problem">
+          <article>
+            <h3>Helpdesk Time Tax</h3>
+            <p>Human dispatchers and Tier 2/3 engineers spend costly cycles playing email or phone tag to collect device context, error codes, scope, and routing details before troubleshooting can begin.</p>
+            <ul>
+              <li>Dispatcher spends 10-15 minutes manually chasing users for device context.</li>
+              <li>Senior technicians waste billable time performing basic diagnostic discovery.</li>
+              <li>SLA response clocks run while tickets sit un-enriched.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Garbage In, Garbage Out Dilemma</h3>
+            <p>MSPbots downstream automation can only perform when ticket metadata is structured. Blank fields and vague categories create routing exceptions, failed reports, and manual cleanup.</p>
+            <ul>
+              <li>Automated routing rules throw exceptions on blank fields.</li>
+              <li>Poor Configuration Item mapping blinds recurrence analysis.</li>
+              <li>Unmapped work risks inaccurate billing and customer dissatisfaction.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="table-card">
+          <h3>Need Gap Analysis</h3>
+          <table>
+            <thead><tr><th>Current Operational State</th><th>Ideal Target State: Pre-Triage Automation</th></tr></thead>
+            <tbody>
+              <tr><td>Support tickets arrive with highly vague, unstructured text.</td><td>Tickets are enriched and categorized automatically before routing.</td></tr>
+              <tr><td>Dispatcher spends 10-15 minutes manually chasing context.</td><td>Crucial context is collected at the edge via adaptive AI conversations.</td></tr>
+              <tr><td>Tier 2/3 engineers waste billable hours on basic discovery.</td><td>Engineers troubleshoot immediately using clean, structured metadata.</td></tr>
+              <tr><td>Next Ticket rules throw exceptions on blank fields.</td><td>Complete schemas enable immediate, touchless ticket assignment.</td></tr>
+              <tr><td>SLA clocks run while tickets sit un-enriched.</td><td>SLAs run with actionable, routing-ready data.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-card">
+          <h3>Target Customer Segments</h3>
+          <table>
+            <thead><tr><th>Segment</th><th>Team Size / Endpoints</th><th>Queue Management</th><th>PSA Hygiene</th><th>V1 Fit</th></tr></thead>
+            <tbody>
+              <tr><td>Segment A: Reactive Shop</td><td>1-5 technicians; under 1,000 endpoints</td><td>No dedicated dispatcher; shared inbox or basic queue.</td><td>Flat, unstructured ticketing; frequent "General IT Support."</td><td>Pass for V1: low process maturity.</td></tr>
+              <tr class="selected-row"><td>Segment B: Process-Driven Mid-Market</td><td>6-25 technicians; 1,000-5,000 endpoints</td><td>Dedicated or fractional dispatcher and structured workflows.</td><td>Configured Service Trees; bad data breaks routing.</td><td>Primary target: fastest measurable ROI.</td></tr>
+              <tr><td>Segment C: Enterprise Operations Center</td><td>26+ technicians; 5,000+ endpoints</td><td>Full triage/NOC teams and advanced routing matrices.</td><td>Rigidly audited, highly customized PSA environment.</td><td>V2+: high complexity and longer sales cycle.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="persona-grid">
+          <article class="persona-card"><span>Primary</span><h3>Sarah, Service Desk Coordinator</h3><p><strong>Goals:</strong> clean queue, fast assignment, fewer follow-up loops.</p><p><strong>Frustrations:</strong> vague tickets, duplicate requests, blame for misrouting.</p><p><strong>Metric:</strong> triage velocity, draft acceptance, clicks per ticket.</p></article>
+          <article class="persona-card"><span>Primary</span><h3>Alex, Client End-User</h3><p><strong>Goals:</strong> submit quickly and get help without technical friction.</p><p><strong>Frustrations:</strong> repeated questions, unclear ticket status, slow response.</p><p><strong>Metric:</strong> completion rate and clarification abandonment.</p></article>
+          <article class="persona-card"><span>Secondary</span><h3>Dave, Tier 2/3 Engineer</h3><p><strong>Goals:</strong> start diagnosis with asset, scope, error, and history.</p><p><strong>Frustrations:</strong> missing device data and back-and-forth discovery.</p><p><strong>Metric:</strong> escalation bounce rate and diagnostic idle-time reduction.</p></article>
+          <article class="persona-card"><span>Secondary</span><h3>Jason, MSP Owner</h3><p><strong>Goals:</strong> expand capacity without adding headcount and protect gross margin.</p><p><strong>Frustrations:</strong> SLA risk, payroll waste, customer churn pressure.</p><p><strong>Metric:</strong> SLA response lift, hours recovered, ARR expansion.</p></article>
+        </div>
+
+        <div class="table-card">
+          <h3>V1 Scenario Prioritization</h3>
+          <table>
+            <thead><tr><th>Use Case</th><th>Frequency</th><th>Ambiguity</th><th>Routing Complexity</th><th>Automation Potential</th><th>Required AI Guardrail Strategy</th></tr></thead>
+            <tbody>
+              <tr><td>VPN / Remote Access Failures</td><td>Medium</td><td>High</td><td>Medium</td><td>Medium</td><td>Ask for device, VPN client error, local internet status, and business impact; reroute if no internet access.</td></tr>
+              <tr><td>Workstation Slowness</td><td>High</td><td>High</td><td>Low</td><td>Low</td><td>Collect asset ID, affected applications, duration, reboot status, and impact scope.</td></tr>
+              <tr><td>Network Printer Offline</td><td>High</td><td>High</td><td>Low</td><td>Medium</td><td>Detect duplicate office/location tickets; do not issue reset commands automatically.</td></tr>
+              <tr><td>New User Onboarding</td><td>Medium</td><td>High</td><td>High</td><td>Medium</td><td>Use checklist-style field capture for start date, manager, apps, role, hardware, and approvals.</td></tr>
+              <tr><td>Line-of-Business App Crash</td><td>High</td><td>High</td><td>High</td><td>Low</td><td>Ask launch method, exact error, scope, and whether peers are affected; emergency bypass if department-wide.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="process-panel">
+          <h3>Scenario Selection Logic</h3>
+          <div class="process-steps">
+            <div><span>1</span><strong>Start with common MSP ticket categories.</strong><p>The source analysis evaluated 20 frequent ticket categories, including password resets, email issues, VPN, printers, workstation slowness, onboarding, MFA, and LoB app crashes.</p></div>
+            <div><span>2</span><strong>Score where intake quality matters.</strong><p>Categories were prioritized when missing context causes real routing or diagnostic waste, not merely because they are easy to automate.</p></div>
+            <div><span>3</span><strong>Filter for human trust.</strong><p>V1 avoids categories where AI would need to execute risky system changes. It focuses on structured data capture, duplicate detection, emergency escalation, and dispatcher review.</p></div>
+            <div><span>4</span><strong>Choose visible demo coverage.</strong><p>The final five scenarios make the product story concrete: remote access, endpoint performance, physical device context, lifecycle workflow, and business-critical app failure.</p></div>
+          </div>
+        </div>
+
+        <div class="table-card">
+          <h3>System Functional Requirements</h3>
+          <table>
+            <thead><tr><th>ID</th><th>Feature Attribute</th><th>Priority</th><th>In-Scope Capabilities</th><th>Out-of-Scope Deferrals</th></tr></thead>
+            <tbody>
+              <tr><td>FR-01</td><td>Multi-Channel Context Extraction</td><td><span class="priority p0">P0</span></td><td>Parse portal, chat, and email inputs into normalized ticket metadata.</td><td>Voice transcription and phone IVR ingestion.</td></tr>
+              <tr><td>FR-02</td><td>Dynamic Context Enrichment Loop</td><td><span class="priority p0">P0</span></td><td>Ask up to 3 clarification turns when fields are missing or confidence is medium.</td><td>Open-ended troubleshooting conversation beyond intake.</td></tr>
+              <tr><td>FR-03</td><td>Descriptive Title and Summary Generation</td><td><span class="priority p0">P0</span></td><td>Convert vague text into a concise ticket title and structured summary.</td><td>Automated customer-facing resolution instructions.</td></tr>
+              <tr><td>FR-04</td><td>PSA Live Duplicate Scanner</td><td><span class="priority p0">P0</span></td><td>Detect active duplicate tickets by location, issue class, account, and service context.</td><td>Cross-client duplicate correlation.</td></tr>
+              <tr><td>FR-05</td><td>Human-in-the-Loop Review Console</td><td><span class="priority p0">P0</span></td><td>Sarah reviews raw input, chat history, AI fields, confidence, and explainability log before PSA write.</td><td>Fully autonomous PSA ticket creation without review.</td></tr>
+              <tr><td>FR-06</td><td>Override Feedback Logging</td><td><span class="priority p1">P1</span></td><td>Capture original AI tags and Sarah's manual corrections for tuning.</td><td>Automated model retraining in real time.</td></tr>
+              <tr><td>FR-07</td><td>Spam and Non-IT Auto-Reject Filter</td><td><span class="priority p1">P1</span></td><td>Route out-of-domain requests to low-priority general triage with warning tags.</td><td>Complex policy enforcement or HR routing.</td></tr>
+              <tr><td>FR-08</td><td>Dynamic PSA Schema Mapping</td><td><span class="priority p2">P2</span></td><td>Nightly schema sync for ConnectWise, Autotask, and Halo field constraints.</td><td>Custom enterprise implementation services.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="reasoning-grid">
+          <article>
+            <h3>Required-field handling rationale</h3>
+            <p>Required fields are not treated as form bureaucracy. They are the minimum viable dataset needed for routing, SLA logic, technician readiness, and PSA integrity: category, subcategory, urgency, primary asset, impact scope, and relevant diagnostic variables.</p>
+          </article>
+          <article>
+            <h3>Incomplete-ticket policy</h3>
+            <p>The system asks clarification questions only up to three turns. If the user abandons or cannot answer, it creates the best available draft tagged as incomplete rather than losing the request or frustrating the end-user.</p>
+          </article>
+          <article>
+            <h3>AI action boundary</h3>
+            <p>AI may suggest, classify, summarize, and detect duplicate risk. It must not silently write to the PSA, execute printer resets, run remediation scripts, or guess low-confidence categories without human review.</p>
+          </article>
+        </div>
+
+        <div class="accordion" id="flowAccordion">
+          <h3>User Interaction Flow</h3>
+          <button class="accordion-btn active">1. Multi-channel Intake Ingestion</button>
+          <div class="accordion-panel open">Alex submits unstructured text through portal, email, or chat. The system sanitizes raw input and prepares it for AI intent processing.</div>
+          <button class="accordion-btn">2. Intent Classification</button>
+          <div class="accordion-panel">AI extracts category, subcategory, implicit urgency, associated asset hints, and a confidence score.</div>
+          <button class="accordion-btn">3. Dynamic Clarification Prompts</button>
+          <div class="accordion-panel">If confidence is medium or required variables are missing, the system asks focused prompts. Low confidence routes to Sarah rather than guessing.</div>
+          <button class="accordion-btn">4. Ticket Structural Summarization</button>
+          <div class="accordion-panel">The system generates a structured JSON payload, title, summary, and explainability log for review.</div>
+          <button class="accordion-btn">5. Sarah's Verification Workspace</button>
+          <div class="accordion-panel">Sarah sees raw input, chat history, AI metadata, confidence, and editable fields. No PSA write occurs until approval.</div>
+          <button class="accordion-btn">6. PSA Database Writeback</button>
+          <div class="accordion-panel">Approved metadata posts to ConnectWise, Autotask, or Halo as a routing-ready ticket. Emergency bypass skips enrichment and alerts Sarah immediately.</div>
+        </div>
+      </section>
+
+      <section id="prototype" class="module protected">
+        <div class="section-heading">
+          <span>Module 3</span>
+          <h2>Prototype Embed and Interactive Workspace</h2>
+          <p>Architecture map plus live prototype frame. This module explains what the prototype is meant to prove in the PM evaluation.</p>
+        </div>
+        <div class="process-panel">
+          <h3>Prototype Evidence Strategy</h3>
+          <div class="process-steps">
+            <div><span>A</span><strong>Prove the happy path.</strong><p>The reviewer should see an end-user issue become an AI-enriched ticket draft, then a dispatcher-approved PSA-ready ticket.</p></div>
+            <div><span>B</span><strong>Prove the AI is visible.</strong><p>The demo must surface suggested summary, suggested category/fields, confidence reasoning, and clarification prompts. Hidden AI is not enough for an interview case.</p></div>
+            <div><span>C</span><strong>Prove trust boundaries.</strong><p>Edge cases show that AI does not overreach: vague requests are clarified, duplicates are warned, and emergencies bypass normal enrichment.</p></div>
+          </div>
+        </div>
+        <div class="workspace">
+          <div class="map-pane">
+            <h3>Architectural Map</h3>
+            <div class="flow-map">
+              <button data-path="happy" class="map-node active">Happy Path Flow</button>
+              <button data-path="missing" class="map-node">Missing Field Trigger</button>
+              <button data-path="duplicate" class="map-node">Duplicate Warning</button>
+              <button data-path="unclear" class="map-node">Unclear Intent</button>
+              <button data-path="emergency" class="map-node danger">Emergency Bypass</button>
+            </div>
+            <div id="mapDetail" class="map-detail">Portal intake -> AI clarification -> structured draft -> Sarah approves -> PSA-ready ticket.</div>
+            <div class="snippet-card">
+              <h4>Validation Object</h4>
+<pre><code>{
+  "confidence": 0.92,
+  "required_fields": ["asset_id", "error_string", "impact_scope"],
+  "missing_fields": [],
+  "psa_targets": ["ConnectWise", "Autotask", "Halo"],
+  "approval_required": true
+}</code></pre>
+            </div>
+          </div>
+          <div class="iframe-pane">
+            <div class="frame-toolbar"><span>Lovable prototype</span><a href="https://mspbots-demo-emilyfan.lovable.app/" target="_blank" rel="noopener">Open in new tab</a></div>
+            <iframe title="MSPBots Lovable prototype" src="https://mspbots-demo-emilyfan.lovable.app/" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="metrics" class="module protected">
+        <div class="section-heading">
+          <span>Module 4</span>
+          <h2>Platform Success Metrics Framework</h2>
+          <p>Operational metrics tied to MSPBots dashboards, KPI engine, AI feedback loops, and QBR reporting.</p>
+        </div>
+        <div class="reasoning-grid">
+          <article>
+            <h3>Why the metric system is operational</h3>
+            <p>The success framework intentionally avoids vanity chatbot metrics. The core question is whether AI intake produces measurable service desk leverage: fewer manual clicks, faster triage, cleaner metadata, fewer escalations, and stronger SLA adherence.</p>
+          </article>
+          <article>
+            <h3>Why PTAY is the north star</h3>
+            <p>Platform Triage Automation Yield connects product usage to recovered labor capacity. It combines dispatcher time saved and technician diagnostic effort saved so the feature can be evaluated as an MSP operating-margin lever.</p>
+          </article>
+          <article>
+            <h3>Why feedback loops matter</h3>
+            <p>Sarah's overrides are not merely audit data. They become structured correction events that inform future classification tuning, turning human-in-the-loop review into a product learning system.</p>
+          </article>
+        </div>
+        <div class="formula-grid">
+          <article><h3>North Star Metric</h3><div class="equation">PTAY = &sum;(M_d + M_e)</div><p>Platform Triage Automation Yield: total estimated operational hours saved per month from reduced manual triage, routing exception handling, and diagnostic discovery.</p></article>
+          <article><h3>Exception Impact Vector</h3><div class="equation">EIV = [NTIC, ITBR]</div><p>Vector for downstream automation impact, joining Next Ticket ingestion compatibility with intake-triggered bot dispatch responsiveness.</p></article>
+          <article><h3>NTIC</h3><div class="equation">NTIC = N_first_pass / N_ai_enriched</div><p>Next Ticket Ingestion Compatibility: AI-enriched tickets parsed by Next Ticket on first evaluation pass divided by total AI-enriched tickets.</p></article>
+          <article><h3>ITBR</h3><div class="equation">ITBR = T_bot_action - T_ticket_created</div><p>Intake-Triggered Bot Dispatch Rate: elapsed time from ticket creation to automated priority-based bot action.</p></article>
+        </div>
+        <div class="metric-targets">
+          <div><strong>Average triage time</strong><span>9.5 min baseline -> &lt;45 sec target</span></div>
+          <div><strong>Data completeness</strong><span>45% baseline -> &gt;95% target</span></div>
+          <div><strong>Categorization match</strong><span>78% baseline -> &gt;88% target</span></div>
+          <div><strong>SLA adherence</strong><span>84.3% baseline -> &gt;92% target</span></div>
+          <div><strong>Next Ticket exceptions</strong><span>28% baseline -> &lt;5% target</span></div>
+        </div>
+        <div class="tabs" data-tabs="metricsTabs">
+          <div class="tab-buttons">
+            <button class="active" data-tab="dashboards">A. Dashboards</button>
+            <button data-tab="native">B. Native KPIs</button>
+            <button data-tab="training">C. AI Loops</button>
+            <button data-tab="qbr">D. QBR Reports</button>
+          </div>
+          <div class="tab-panel active" data-panel="dashboards">Dispatcher Efficiency Dashboard: Triage Velocity Tracker and Data Completeness Index gauge.</div>
+          <div class="tab-panel" data-panel="native">New schema KPIs: kpi_ai_draft_acceptance_rate and kpi_triage_processing_clicks.</div>
+          <div class="tab-panel" data-panel="training">Override Vector Log captures Sarah's corrections and feeds monthly prompt calibration.</div>
+          <div class="tab-panel" data-panel="qbr">Customer-facing Triage Speed Report and self-service engagement trend reporting.</div>
+        </div>
+      </section>
+
+      <section id="gtm" class="module protected">
+        <div class="section-heading">
+          <span>Module 5</span>
+          <h2>GTM Execution Engine</h2>
+          <p>Positioning, persona messaging, and pilot gates for Segment B launch. This section keeps the reasoning behind the GTM choices visible.</p>
+        </div>
+        <div class="reasoning-grid">
+          <article>
+            <h3>Need-gap framing</h3>
+            <p>The GTM argument begins with operational capacity, not AI capability. MSP owners do not buy "a chatbot"; they buy fewer bottlenecks, fewer SLA misses, and more endpoint support capacity without hiring another dispatcher.</p>
+          </article>
+          <article>
+            <h3>STP logic</h3>
+            <p>Segment A lacks process maturity, while Segment C carries heavy customization and long procurement cycles. Segment B is the practical target because the pain is acute, the workflows are structured, and the ROI can be measured quickly.</p>
+          </article>
+          <article>
+            <h3>Product-led growth trigger</h3>
+            <p>The feature should be promoted when MSPbots data already detects the pain: queue bottlenecks, high unassigned tickets, SLA latency, and routing exception patterns. This makes adoption feel timely rather than sales-pushed.</p>
+          </article>
+        </div>
+        <h3 class="subsection-title">Positioning Ladder</h3>
+        <div class="positioning-ladder">
+          <div><span>Feature</span><strong>AI Conversational Ticket Intake</strong></div>
+          <div><span>Functional Benefit</span><strong>Structured context captured at the edge</strong></div>
+          <div><span>Operational Benefit</span><strong>Fewer dispatcher clicks and routing exceptions</strong></div>
+          <div><span>Business Benefit</span><strong>Capacity expansion without headcount</strong></div>
+          <div class="highlight"><span>Executive Outcome</span><strong>Pre-Triage Automation protects margin and SLA trust</strong></div>
+        </div>
+        <div class="role-selector">
+          <div class="role-buttons">
+            <button class="active" data-role="owner">MSP Owner</button>
+            <button data-role="manager">Service Desk Manager</button>
+            <button data-role="dispatcher">Dispatcher</button>
+            <button data-role="technician">Frontline Technician</button>
+          </div>
+          <div id="roleMessage" class="role-message"><h3>Recover support capacity without adding headcount.</h3><p>Position AI intake as margin protection, SLA risk reduction, and higher platform automation yield.</p></div>
+        </div>
+        <div class="timeline">
+          <div><span>Weeks 1-4</span><strong>Private Pilot</strong><p>10-15 selected MSPs; 30-day sandbox; active ConnectWise, Autotask, or Halo integration.</p></div>
+          <div><span>Weeks 5-8</span><strong>Public Beta</strong><p>Marketplace listing; 14-day or 200-ticket trial triggered by queue bottleneck signals.</p></div>
+          <div><span>Week 9+</span><strong>General Availability</strong><p>Consumption billing active; IT Nation and MSP community launch motions.</p></div>
+        </div>
+        <div class="gate-list">
+          <strong>Pilot graduation gates:</strong>
+          <span>&gt;=30% ticket completeness increase</span>
+          <span>&gt;=25% dispatcher effort reduction</span>
+          <span>Zero data corruption or unsynchronized PSA writes</span>
+          <span>Positive dispatcher trust feedback</span>
+        </div>
+        <div class="process-panel">
+          <h3>Why the rollout is gated</h3>
+          <p>A broad launch would be risky because PSA schemas vary and MSPs are highly trust-sensitive. The pilot protects platform reputation by validating schema mapping, dispatcher trust, data completeness gains, and zero-corruption PSA writes before the feature is monetized at scale.</p>
+        </div>
+      </section>
+
+      <section id="revenue" class="module protected revenue-matrix">
+        <div class="section-heading">
+          <span>Module 6</span>
+          <h2>Financial Revenue Projections</h2>
+          <p>12-month financial expansion projection with three cases, including the pricing logic and assumptions behind the numbers.</p>
+        </div>
+        <div class="reasoning-grid">
+          <article>
+            <h3>Why hybrid pricing</h3>
+            <p>A flat per-seat fee decouples price from ticket volume, while a pure add-on can slow procurement. The selected model uses AI credits to lower entry friction and ties expansion revenue to the number of tickets enriched.</p>
+          </article>
+          <article>
+            <h3>Why credits create expansion</h3>
+            <p>As ticket quality improves, more intake volume flows through the module. Higher usage drives credit overages, and recurring overages create a rational trigger to upgrade platform tiers for better bundled credit economics.</p>
+          </article>
+          <article>
+            <h3>Why the base case matters</h3>
+            <p>The base case is not just a usage model. It combines $270K credit expansion with a $65K plan-upgrade delta, showing how a workflow feature can increase both consumption revenue and core platform ARR.</p>
+          </article>
+        </div>
+        <div class="case-grid">
+          <article><h3>Conservative Case</h3><span>15% adoption</span><strong>45 MSPs</strong><p>$54K ARR expansion</p></article>
+          <article class="base-case"><h3>Base Case</h3><span>30% adoption</span><strong>90 MSPs</strong><p>$270K ARR credit expansion + $65K plan upgrade delta = <b>$335K Total Expansion ARR</b></p></article>
+          <article><h3>Best Case</h3><span>50% adoption</span><strong>150 MSPs</strong><p>$900K ARR credit expansion</p></article>
+        </div>
+        <div class="table-card">
+          <h3>Revenue Assumption Logic</h3>
+          <table>
+            <thead><tr><th>Variable</th><th>Reasoning</th><th>Business Meaning</th></tr></thead>
+            <tbody>
+              <tr><td>Adopted MSP accounts</td><td>Modeled at 15%, 30%, and 50% adoption to separate conservative, base, and upside outcomes.</td><td>Controls how broadly the feature penetrates the existing platform base.</td></tr>
+              <tr><td>Credit MRR per MSP</td><td>Scales from $100 to $500 as ticket volume, multi-turn classification, and intake scope expand.</td><td>Connects revenue to actual usage and value extracted.</td></tr>
+              <tr><td>Plan upgrade delta</td><td>Base case assumes some customers upgrade tiers to secure better credit economics.</td><td>Turns high usage into durable platform ARR expansion.</td></tr>
+              <tr><td>Net dollar retention lift</td><td>Better automation success makes MSPbots harder to displace inside the service desk operating layer.</td><td>Revenue quality improves through stickiness, not only new charges.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="growth-loop">
+          <div>Ticket Intake Quality</div>
+          <div>Higher Automation Success</div>
+          <div>Increased Credit Consumption</div>
+          <div>Tier Upgrade Triggers</div>
+          <div>NDR Lifecycle Lift</div>
+        </div>
+      </section>
+
+      <section id="decisions" class="module protected">
+        <div class="section-heading">
+          <span>Module 7</span>
+          <h2>Executive Product Decision Log and AI Notes</h2>
+          <p>Ten decisions across strategy, architecture, GTM, monetization, metrics, and prototype scope.</p>
+        </div>
+        <div class="process-panel">
+          <h3>Decision-Making Method</h3>
+          <p>The decision log is structured to show ownership under ambiguity. Each choice captures the selected path, alternatives considered, accepted tradeoff, and the customer validation method. The pattern is intentionally product-led: decide clearly, name what is being sacrificed, and define how the decision would be tested with real MSPs.</p>
+        </div>
+        <div class="decision-list">
+          <article><b>1. Problem Focus</b><span>Choice: ticket intake quality and context enrichment. Alternative: autonomous ticket resolution. Tradeoff: less automation hype, more trust. Validation: measure incomplete ticket reduction.</span></article>
+          <article><b>2. Target Segment</b><span>Choice: Segment B mid-market MSPs. Alternative: small reactive shops or enterprise NOCs. Tradeoff: excludes extremes. Validation: pilot with dedicated dispatch teams.</span></article>
+          <article><b>3. Positioning</b><span>Choice: Pre-Triage Automation. Alternative: AI chatbot or virtual assistant. Tradeoff: market education. Validation: messaging tests with owners and service managers.</span></article>
+          <article><b>4. Deployment Architecture</b><span>Choice: embedded platform capability. Alternative: standalone SaaS. Tradeoff: core release dependency. Validation: measure setup time and integration friction.</span></article>
+          <article><b>5. Primary Entry Point</b><span>Choice: end-user intake workflows. Alternative: technician console or manager dashboard. Tradeoff: simplified UI required. Validation: completion and abandonment rates.</span></article>
+          <article><b>6. Monetization Model</b><span>Choice: consumption AI credits. Alternative: flat add-on or per-seat. Tradeoff: revenue varies by volume. Validation: credit consumption during pilot.</span></article>
+          <article><b>7. Revenue Expansion</b><span>Choice: plan upgrades triggered by credit limits. Alternative: raw overages only. Tradeoff: monitor consumption boundaries. Validation: upgrade conversion tracking.</span></article>
+          <article><b>8. Success Metrics</b><span>Choice: operational outcome KPIs. Alternative: technical AI metrics. Tradeoff: deeper event instrumentation. Validation: dashboard adoption and KPI reliability.</span></article>
+          <article><b>9. Rollout Strategy</b><span>Choice: controlled metric-gated pilot. Alternative: immediate GA. Tradeoff: slower commercialization. Validation: exit gates and CSAT.</span></article>
+          <article><b>10. Prototype Scope</b><span>Choice: intake-to-review loop. Alternative: full platform shell. Tradeoff: fewer secondary screens. Validation: evaluator can complete happy path and edge cases.</span></article>
+        </div>
+        <div class="ai-notes">
+          <article><h3>Where AI accelerated delivery</h3><p>Vibe-coding prototyping in Lovable and Cursor, structural scenario matrix generation, data pipeline scaffolding, and LaTeX-style metric consolidation.</p></article>
+          <article><h3>Where human product judgment stayed uncompromised</h3><p>Prioritization frameworks, target segmentation, commercial credit-model design, strict 3-turn clarification limits, and emergency bypass logic.</p></article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="sticky-footer">Prepared by Emily Fan | MSPBots PM Case Study | Not for redistribution</footer>
+  <script src="app.js"></script>
+</body>
+</html>

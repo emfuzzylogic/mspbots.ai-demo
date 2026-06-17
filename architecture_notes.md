@@ -6,6 +6,7 @@
 - `full-prd.html`: standalone full original PRD HTML generated from the PRD DOCX for complete PRD review.
 - `styles.css`: enterprise B2B SaaS visual system using deep blue, teal, slate, and white surfaces.
 - `app.js`: local access gate, accordion behavior, metric tabs, role selector, architectural map interactions, and protection handlers.
+- `assets/prototype-screens/`: six live Lovable prototype screenshots used by the Full PRD's Multi-Screen Prototyping Journey gallery.
 
 ## Content Architecture
 

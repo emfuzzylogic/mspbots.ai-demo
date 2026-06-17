@@ -26,6 +26,7 @@ Required files:
 - `full-prd.html`
 - `styles.css`
 - `app.js`
+- `assets/prototype-screens/*.png`
 - `README.md`
 - `protection_inventory.md`
 - `architecture_notes.md`
@@ -46,6 +47,8 @@ The standalone complete PRD is available at:
 ```text
 full-prd.html
 ```
+
+The Full PRD includes a six-screen prototype screenshot gallery sourced from the live Lovable prototype routes. Keep the `assets/prototype-screens/` folder when publishing.
 
 ## Source Handling
 

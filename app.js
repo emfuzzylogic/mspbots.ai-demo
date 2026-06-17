@@ -4,6 +4,7 @@
   const prototypeUrl = "https://mspbots-demo-emilyfan.lovable.app/";
   const mapCopy = {
     happy: "Portal intake -> AI clarification -> structured draft -> Sarah approves -> PSA-ready ticket.",
+    email: "Email intake -> AI parses intent -> draft tagged [AI Enriched - Missing Fields] -> automated follow-up collects missing context -> Sarah reviews.",
     missing: "Missing variables trigger a maximum 3-turn clarification loop. If the user drops out, the draft is tagged [Enrichment Incomplete] and routed to Sarah.",
     duplicate: "Duplicate scan checks office, floor, asset, issue class, and active PSA tickets before allowing a new work order.",
     unclear: "Low confidence or out-of-domain input routes to General Triage with a visible AI warning tag instead of confident categorization.",

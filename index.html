@@ -90,7 +90,7 @@
         <div class="section-heading">
           <span>Module 2</span>
           <h2>Integrated Product Requirements</h2>
-          <p>Compiled from customer segmentation, strategy, scenario, flow, and PRD sources. This section shows the product reasoning path, not only the final requirements.</p>
+          <p>Updated from PRD v1.1. This section summarizes the product reasoning path, functional boundaries, user-flow architecture, exception handling, and prototype blueprint without replacing the complete PRD file.</p>
           <a class="secondary-link" href="full-prd.html">Open complete original PRD as standalone HTML</a>
         </div>
 
@@ -104,8 +104,8 @@
             <p>Autonomous fixes are riskier, harder to trust, and harder to scope for V1. Pre-triage automation is a narrower and more defensible wedge: AI enriches metadata, explains its reasoning, flags uncertainty, and leaves Sarah as the final approval gate before PSA writeback.</p>
           </article>
           <article>
-            <h3>How scope was selected</h3>
-            <p>The source scenario matrix ranked categories by ticket frequency, information ambiguity, routing complexity, and automation potential. V1 prioritizes scenarios where clarification materially improves routing quality, while high-risk remediation and enterprise customization are deferred.</p>
+            <h3>How v1.1 tightened scope</h3>
+            <p>The updated PRD makes the trust model more explicit: AI can classify, summarize, enrich, warn on duplicates, and trigger emergency escalation, while deterministic PSA checks and Sarah's approval protect ticket creation and routing integrity.</p>
           </article>
         </div>
 
@@ -133,13 +133,13 @@
         <div class="table-card">
           <h3>Need Gap Analysis</h3>
           <table>
-            <thead><tr><th>Current Operational State</th><th>Ideal Target State: Pre-Triage Automation</th></tr></thead>
+            <thead><tr><th>Current Operational State</th><th>Ideal Target State</th><th>Downstream Strategic Impact</th></tr></thead>
             <tbody>
-              <tr><td>Support tickets arrive with highly vague, unstructured text.</td><td>Tickets are enriched and categorized automatically before routing.</td></tr>
-              <tr><td>Dispatcher spends 10-15 minutes manually chasing context.</td><td>Crucial context is collected at the edge via adaptive AI conversations.</td></tr>
-              <tr><td>Tier 2/3 engineers waste billable hours on basic discovery.</td><td>Engineers troubleshoot immediately using clean, structured metadata.</td></tr>
-              <tr><td>Next Ticket rules throw exceptions on blank fields.</td><td>Complete schemas enable immediate, touchless ticket assignment.</td></tr>
-              <tr><td>SLA clocks run while tickets sit un-enriched.</td><td>SLAs run with actionable, routing-ready data.</td></tr>
+              <tr><td>Support tickets arrive with vague, unstructured text.</td><td>Tickets are enriched and categorized automatically before routing.</td><td>Eliminates manual dispatcher administrative triage overhead.</td></tr>
+              <tr><td>Sarah spends 10-15 minutes manually chasing device context.</td><td>Crucial context is collected at the edge via adaptive AI conversations.</td><td>Accelerates time-to-triage and prevents queue backlog buildup.</td></tr>
+              <tr><td>Tier 2/3 engineers waste billable hours on basic discovery.</td><td>Engineers troubleshoot immediately using clean, structured metadata.</td><td>Expands service desk gross margin and engineer utilization.</td></tr>
+              <tr><td>Next Ticket rules throw exceptions on blank fields.</td><td>Complete schemas enable immediate, touchless ticket assignment.</td><td>Maximizes automation yield from existing MSPbots investments.</td></tr>
+              <tr><td>SLA clocks run while tickets sit un-enriched.</td><td>SLAs run with actionable, routing-ready data.</td><td>Protects client retention and contractual SLA trust.</td></tr>
             </tbody>
           </table>
         </div>
@@ -188,18 +188,18 @@
         </div>
 
         <div class="table-card">
-          <h3>System Functional Requirements</h3>
+          <h3>Prioritized Functional Requirements</h3>
           <table>
-            <thead><tr><th>ID</th><th>Feature Attribute</th><th>Priority</th><th>In-Scope Capabilities</th><th>Out-of-Scope Deferrals</th></tr></thead>
+            <thead><tr><th>ID</th><th>Module / Feature</th><th>Priority</th><th>Functional Requirement</th><th>AI vs. Deterministic Boundary</th></tr></thead>
             <tbody>
-              <tr><td>FR-01</td><td>Multi-Channel Context Extraction</td><td><span class="priority p0">P0</span></td><td>Parse portal, chat, and email inputs into normalized ticket metadata.</td><td>Voice transcription and phone IVR ingestion.</td></tr>
-              <tr><td>FR-02</td><td>Dynamic Context Enrichment Loop</td><td><span class="priority p0">P0</span></td><td>Ask up to 3 clarification turns when fields are missing or confidence is medium.</td><td>Open-ended troubleshooting conversation beyond intake.</td></tr>
-              <tr><td>FR-03</td><td>Descriptive Title and Summary Generation</td><td><span class="priority p0">P0</span></td><td>Convert vague text into a concise ticket title and structured summary.</td><td>Automated customer-facing resolution instructions.</td></tr>
-              <tr><td>FR-04</td><td>PSA Live Duplicate Scanner</td><td><span class="priority p0">P0</span></td><td>Detect active duplicate tickets by location, issue class, account, and service context.</td><td>Cross-client duplicate correlation.</td></tr>
-              <tr><td>FR-05</td><td>Human-in-the-Loop Review Console</td><td><span class="priority p0">P0</span></td><td>Sarah reviews raw input, chat history, AI fields, confidence, and explainability log before PSA write.</td><td>Fully autonomous PSA ticket creation without review.</td></tr>
-              <tr><td>FR-06</td><td>Override Feedback Logging</td><td><span class="priority p1">P1</span></td><td>Capture original AI tags and Sarah's manual corrections for tuning.</td><td>Automated model retraining in real time.</td></tr>
-              <tr><td>FR-07</td><td>Spam and Non-IT Auto-Reject Filter</td><td><span class="priority p1">P1</span></td><td>Route out-of-domain requests to low-priority general triage with warning tags.</td><td>Complex policy enforcement or HR routing.</td></tr>
-              <tr><td>FR-08</td><td>Dynamic PSA Schema Mapping</td><td><span class="priority p2">P2</span></td><td>Nightly schema sync for ConnectWise, Autotask, and Halo field constraints.</td><td>Custom enterprise implementation services.</td></tr>
+              <tr><td>FR-1.1</td><td>Multi-Channel Context Extraction</td><td><span class="priority p0">P0</span></td><td>Ingest web chat portal and email text, identify intent, and map parameters to the MSP's custom PSA category tree.</td><td>AI proposes category, subcategory, urgency, and priority tags.</td></tr>
+              <tr><td>FR-1.2</td><td>Dynamic Context Enrichment Loop</td><td><span class="priority p0">P0</span></td><td>Trigger conversational follow-up questions when required fields are missing or confidence falls below threshold.</td><td>AI structures prompts; loop is capped at 3 turns to prevent user fatigue.</td></tr>
+              <tr><td>FR-1.3</td><td>Descriptive Title and Summary Gen</td><td><span class="priority p0">P0</span></td><td>Convert vague titles such as "Help please" into technical queue-ready ticket names and summaries.</td><td>AI generates summaries optimized for dispatcher and technician review.</td></tr>
+              <tr><td>FR-1.4</td><td>PSA Live Duplicate Scanner</td><td><span class="priority p0">P0</span></td><td>Scan open PSA tickets and offer to attach the user to an existing parent ticket when a duplicate is likely.</td><td>Deterministic PSA query checks active service tags and prevents duplicate work orders.</td></tr>
+              <tr><td>FR-1.5</td><td>Human-in-the-Loop Review Console</td><td><span class="priority p0">P0</span></td><td>Show raw input, chat history, proposed AI metadata, and explainability log before PSA writeback.</td><td>Sarah has full edit rights; approval triggers the deterministic PSA POST request.</td></tr>
+              <tr><td>FR-1.6</td><td>Human Override Feedback Logging</td><td><span class="priority p0">P0</span></td><td>Log Sarah's corrections to rejected AI tags and approved manual overrides for training analysis.</td><td>Deterministic event listener records approved field changes.</td></tr>
+              <tr><td>FR-1.7</td><td>Spam and Non-IT Auto-Reject Filter</td><td><span class="priority p1">P1</span></td><td>Flag non-IT requests, marketing spam, or abusive messages before they pollute the active review queue.</td><td>AI-assisted context filtering blocks anomalous or irrelevant tickets.</td></tr>
+              <tr><td>FR-1.8</td><td>Dynamic PSA Schema Mapping</td><td><span class="priority p1">P1</span></td><td>Fetch custom ConnectWise, Autotask, or Halo category schemas through nightly API sync.</td><td>Deterministic schema constraints prevent hallucinated AI categories.</td></tr>
             </tbody>
           </table>
         </div>
@@ -217,6 +217,20 @@
             <h3>AI action boundary</h3>
             <p>AI may suggest, classify, summarize, and detect duplicate risk. It must not silently write to the PSA, execute printer resets, run remediation scripts, or guess low-confidence categories without human review.</p>
           </article>
+        </div>
+
+        <div class="table-card">
+          <h3>Alternate Paths and Error States</h3>
+          <table>
+            <thead><tr><th>Path</th><th>Trigger</th><th>System Response</th><th>Trust Boundary</th></tr></thead>
+            <tbody>
+              <tr><td>Asynchronous Email Ingestion</td><td>User emails a vague request such as "VPN isn't working."</td><td>Create a draft tagged missing fields and send an automated follow-up email for the missing error string.</td><td>Do not block ticket capture just because real-time chat is unavailable.</td></tr>
+              <tr><td>Active Duplicate Protection</td><td>User reports an issue already represented by an open PSA ticket.</td><td>Display a duplicate warning and offer to link the user to the existing parent ticket.</td><td>Deterministic PSA lookup prevents duplicate work orders.</td></tr>
+              <tr><td>Low Confidence / Non-IT</td><td>User enters irrelevant or unparseable text.</td><td>Bypass extended questioning, tag as low confidence, and route to Sarah's general triage queue.</td><td>AI explains uncertainty instead of forcing a confident category.</td></tr>
+              <tr><td>Dropout / Timeout</td><td>User leaves the clarification flow before all fields are captured.</td><td>Create the best available draft with an incomplete-intake label.</td><td>The request is preserved without exhausting the end-user.</td></tr>
+              <tr><td>Emergency Bypass</td><td>AI detects "entire office down," ransomware warning, or similar crisis terms.</td><td>Skip clarification, mark Critical / Emergency, and alert Sarah immediately.</td><td>Urgency beats enrichment when delay would create operational risk.</td></tr>
+            </tbody>
+          </table>
         </div>
 
         <div class="accordion" id="flowAccordion">
@@ -250,11 +264,24 @@
             <div><span>C</span><strong>Prove trust boundaries.</strong><p>Edge cases show that AI does not overreach: vague requests are clarified, duplicates are warned, and emergencies bypass normal enrichment.</p></div>
           </div>
         </div>
+        <div class="process-panel">
+          <h3>PRD v1.1 Prototype Blueprint</h3>
+          <p>The updated PRD defines the prototype as a six-screen journey that should feel native to MSPbots: portal intake, clarification, AI draft, dispatcher queue, routing status, and KPI evidence.</p>
+          <div class="process-steps">
+            <div><span>1</span><strong>Client Portal Ingestion</strong><p>Alex enters an unstructured support issue through a low-friction intake surface.</p></div>
+            <div><span>2</span><strong>Conversational Clarification</strong><p>AI asks only the missing scenario-specific questions and stops after a bounded loop.</p></div>
+            <div><span>3</span><strong>AI Ticket Draft</strong><p>The system proposes title, category, urgency, asset fields, and summary with confidence context.</p></div>
+            <div><span>4</span><strong>Dispatcher Review Queue</strong><p>Sarah reviews, edits, overrides, or approves with the explainability log visible.</p></div>
+            <div><span>5</span><strong>Automation Status</strong><p>Approved tickets become PSA-ready and eligible for routing, bot triggers, or duplicate linking.</p></div>
+            <div><span>6</span><strong>KPI Dashboard</strong><p>Managers see triage velocity, draft acceptance, completeness, and downstream automation impact.</p></div>
+          </div>
+        </div>
         <div class="workspace">
           <div class="map-pane">
             <h3>Architectural Map</h3>
             <div class="flow-map">
               <button data-path="happy" class="map-node active">Happy Path Flow</button>
+              <button data-path="email" class="map-node">Email Intake Fallback</button>
               <button data-path="missing" class="map-node">Missing Field Trigger</button>
               <button data-path="duplicate" class="map-node">Duplicate Warning</button>
               <button data-path="unclear" class="map-node">Unclear Intent</button>
